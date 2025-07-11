@@ -1,0 +1,40 @@
+{
+  "agent": {
+    "name": "equity-manager",
+    "version": "1.0.0",
+    "description": "Specialized AI assistant for equity management integration",
+    "capabilities": [
+      "valuation",
+      "portfolio_management", 
+      "risk_analysis",
+      "compliance",
+      "reporting"
+    ],
+    "integrations": {
+      "vscode": {
+        "chat_participant": true,
+        "command_palette": true
+      }
+    },
+    "domains": [
+      "finance",
+      "equity_management", 
+      "portfolio_optimization",
+      "risk_management",
+      "regulatory_compliance"
+    ],
+    "supported_languages": [
+      "csharp",
+      "typescript",
+      "python",
+      "javascript"
+    ],
+    "sample_queries": [
+      "Calculate DCF valuation for a company",
+      "Optimize portfolio allocation using modern portfolio theory",
+      "Calculate Value at Risk using historical simulation",
+      "Check compliance with position limits",
+      "Generate performance attribution report"
+    ]
+  }
+}

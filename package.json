@@ -1,0 +1,46 @@
+{
+  "name": "equity-management-copilot",
+  "displayName": "Equity Management Copilot Agent",
+  "description": "A copilot agent for equity management integration tasks",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "AI",
+    "Chat Participants",
+    "Other"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "chatParticipants": [
+      {
+        "id": "equity-manager",
+        "name": "equity-manager",
+        "description": "An AI assistant specialized in equity management integration",
+        "isSticky": true
+      }
+    ],
+    "commands": [
+      {
+        "command": "equityManager.help",
+        "title": "Show Equity Manager Help"
+      }
+    ]
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "18.x",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+  }
+}
